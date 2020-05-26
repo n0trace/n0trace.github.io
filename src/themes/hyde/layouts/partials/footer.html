@@ -11,14 +11,12 @@
   hljs.initHighlightingOnLoad();
 </script>
 
-
 {{ with .Site.Params.footer }}
 <hr />
 {{ . | markdownify }}
 {{ end }}
+
 <span id="reading-statistics" /><span>
-
-
   {{ if (ne .Slug "") }}
   <div id="git-comments"></div>
   <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
@@ -27,11 +25,11 @@
     var gitment = new Gitment({
       id: '{{ .Slug }}',
       title: '{{ .Title }}',
-      owner: 'chyroc',
-      repo: 'blog',
+      owner: 'n0trace',
+      repo: 'n0trace.github.io',
       oauth: {
-        client_id: '8c82b06a91363498c79a',
-        client_secret: 'e94b2a5b665e976a7fad527903e77c7f4d515e7c',
+        client_id: '53f50045d251b5d77435',
+        client_secret: '81063a46fbd8ee29c266f15d10c266dfdef6ffed',
       }
     })
     gitment.render('git-comments')

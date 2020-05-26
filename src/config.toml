@@ -1,11 +1,12 @@
-baseURL = "https://n0trace.github.io"
+baseURL = "https://n0trace.github.io/"
 languageCode = "zh-cn"
 title = "折腾是为了不折腾"
 theme = "hyde"
 
 [params]
     themeColor = "theme-base-08"
-    footer = "&copy; [chyroc](https://n0trace.github.io) [Theme By hyde](https://github.com/spf13/hyde) 2020"
+    footer = "&copy; [n0trace](https://n0trace.github.io) [Theme By hyde](https://github.com/spf13/hyde) 2020"
+    description = "一个总想一劳永逸的开发者"
 
 [permalinks]
     post = "/post/:year/:month/:day/:slug/"
@@ -15,3 +16,8 @@ theme = "hyde"
     name = "主页"
     url = "/"
     weight = 1
+
+[[menu.about]]
+    name = "关于"
+    url = "/about/"
+    weight = 2

@@ -4,4 +4,4 @@ see [https://n0trace.github.io](https://n0trace.github.io)
 
 ## 编译部署
 
-通过 github 自动部署到 `gh-pages` 分支
+通过 github 自动部署到 `master` 分支

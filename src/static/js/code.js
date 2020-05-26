@@ -1,5 +1,5 @@
 // math code
-(function() {
+(function () {
   var i, text, code, codes = document.getElementsByTagName('code');
   for (i = 0; i < codes.length;) {
     code = codes[i];
@@ -10,8 +10,8 @@
         code.textContent = text;
       }
       if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
-          /^\$(.|\s)+\$$/.test(text) ||
-          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        /^\$(.|\s)+\$$/.test(text) ||
+        /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
         code.outerHTML = code.innerHTML;  // remove <code></code>
         continue;
       }
@@ -22,7 +22,7 @@
 
 
 // center img
-(function() {
+(function () {
   function center_el(tagName) {
     var tags = document.getElementsByTagName(tagName), i, tag;
     for (i = 0; i < tags.length; i++) {
@@ -44,17 +44,3 @@
     center_el(tagNames[i]);
   }
 })();
-
-
-$.ajax("https://api.chyroc.cn/statistics", {
-  type: "GET",
-  statusCode: {
-    200: function(data) {
-      if (data !== '') {
-        $('#reading-statistics').text(function(i, oldText) {
-          return '阅读量 '+data;
-        });
-      }
-    }
-  }
-});
